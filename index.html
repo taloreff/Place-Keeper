@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Place Keeper</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    
+  </head>
+  <body onload="onDisplay('home')">
+    <main>
+      <nav class="home-nav">
+        <div class="left-nav">
+          <img src="imgs/logo.jpg" alt="Map logo" />
+          <h2>Place Keeper</span>
+        </div>
+        <div>
+          <button class="nav-home" onclick="onDisplay('home')">Home</button> 
+          <button class="nav-map" onclick="onDisplay('map')">Explore Map</button>
+          <button class="nav-user-pref" onclick="onDisplay('user-pref')">Settings</button>
+        </div>
+      </nav>
+      <section class="home">
+        <div class="home-container"></div>
+      </section>
+      <section class="user-pref" style="display: none">
+        <div class="form-container">
+        </div>
+      </section>
+      <section class="map" style="display: none">
+        <div class="map-content">
+          
+        </div>
+      </section>
+    </main>
+    <script type="module" src="js/app.controller.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZHE0jtrWArab41ZbQN5YPTJqYeJC-jrU&callback=initMap" defer></script>
+  </body>
+</html>

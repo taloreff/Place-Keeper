@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(32, 159, 209, 0.2);
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-nav {
+  height: 100px;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.home-nav img {
+  height: 70px;
+  border-radius: 24px;
+}
+
+.left-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+.home-nav h2 {
+  font-size: 30px;
+}
+.home-nav button,
+.home-nav h2 {
+  margin: 0 10px;
+}
+
+.home-nav button,
+.user-pref form button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  min-width: 120px;
+  background-color: rgba(69, 90, 211, 0.2);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.home-nav button:hover,
+.user-pref form button:hover {
+  transition: 0.3s;
+  background-color: rgba(69, 90, 211, 0.6);
+  cursor: pointer;
+}
+
+.form-container {
+  margin-top: 200px;
+  margin: 200px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 80%;
+}
+
+.user-pref form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(13, 73, 97, 0.05);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.user-pref form section,
+.user-pref form button {
+  width: 300px;
+  background-color: rgba(13, 73, 97, 0.2);
+  margin: 5px 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.user-pref form button {
+  background-color: rgba(13, 73, 97, 0.2);
+}
+
+.user-pref form button:hover {
+  background-color: rgba(13, 73, 97, 0.6);
+}
+
+.user-pref form input {
+  border-radius: 2px;
+  border: none;
+  padding: 4px;
+  margin-left: 10px;
+}
+
+.age-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.age-input-container input[type="range"] {
+  flex: 1;
+}
+
+.home-container {
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.home-container h5 {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+button,
+.nav-home,
+.nav-map,
+.nav-user-pref,
+.form-btn {
+  color: inherit;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-content {
+  flex: 1;
+  display: flex;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.google-map {
+  flex: 1;
+  height: 70vh;
+}
+
+.places-list {
+  width: 300px;
+  max-height: 640px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.places-list p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+.places-list button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  width: calc(50% - 5px);
+  box-sizing: border-box;
+}
+
+.places-list button:hover {
+  background-color: #0056b3;
+}
+
+.places-list .bottom-places-btn {
+  align-self: flex-end;
+  margin-top: 30px;
+  background-color: #28a745;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.places-list .bottom-places-btn:hover {
+  background-color: #218838;
+}
+
+.user-input {
+  margin-bottom: 10px;
+}
+
+.user-input input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.user-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.places-list a {
+  height: 100px;
+}
